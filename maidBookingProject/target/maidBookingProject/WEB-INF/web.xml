@@ -1,0 +1,58 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+
+  <display-name>Archetype Created Web Application</display-name>
+  
+ 
+  
+  <servlet>
+  	<servlet-name>loginPage</servlet-name>
+  	<display-name>loginPage</display-name>
+  	<description></description>
+  	<servlet-class>login.loginPage</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>registrationPage</servlet-name>
+  	<display-name>registrationPage</display-name>
+  	<description></description>
+  	<servlet-class>registration.registrationPage</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>serviceBooking</servlet-name>
+  	<display-name>serviceBooking</display-name>
+  	<description></description>
+  	<servlet-class>login.serviceBooking</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>logOutTrench</servlet-name>
+  	<display-name>logOutTrench</display-name>
+  	<description></description>
+  	<servlet-class>registration.logOutTrench</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>loginPage</servlet-name>
+  	<url-pattern>/loginPage</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>registrationPage</servlet-name>
+  	<url-pattern>/registrationPage</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>serviceBooking</servlet-name>
+  	<url-pattern>/serviceBooking</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>logOutTrench</servlet-name>
+  	<url-pattern>/logOut</url-pattern>
+  </servlet-mapping>
+  
+  <welcome-file-list>  
+   <welcome-file>login.html</welcome-file>  
+  </welcome-file-list>
+  
+  
+</web-app>
